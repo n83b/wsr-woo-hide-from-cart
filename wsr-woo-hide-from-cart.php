@@ -29,8 +29,8 @@ if (!class_exists('WSRWooHideFromCart')) {
             add_filter('woocommerce_is_purchasable', array($this, 'isPurchasable'), 10, 2);
             add_filter('woocommerce_get_price_html', array($this, 'customPriceMessage'));
             add_action('manage_product_posts_columns', array($this, 'wooCustomAdminColumn'), 10, 1); //add custom column
-            add_action('manage_product_posts_custom_column', array( $this, 'manageCustomAdminColumns'), 10, 2); //populate colum
-            n
+            add_action('manage_product_posts_custom_column', array( $this, 'manageCustomAdminColumns'), 10, 2); //populate column
+            
             //TODO:  Quick Edits
             //https://www.sitepoint.com/extend-the-quick-edit-actions-in-the-wordpress-dashboard/
             //add_action('quick_edit_custom_box', array( $this, 'displayQuickEditCustom'), 10, 2); //output form elements for quickedit interface
