@@ -107,7 +107,7 @@ if (!class_exists('WSRWooHideFromCart')) {
                     'wsr_woo_hidecart_chk_id',
                     'Hide from cart',
                     array( $this, 'wooHidecartChkHtml'),
-                    $screen;
+                    $screen
                 );
             }
         }
